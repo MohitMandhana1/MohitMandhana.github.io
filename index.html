@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mohit Mandhana</title>
+<link rel="stylesheet" href="style.css">
+<script src="https://kit.fontawesome.com/74dc6f1dff.js" crossorigin="anonymous"></script>
+</head>
+<body>
+<div id="header">
+    <div class="container"> 
+        <nav>
+            <img src="logo2.png" class="logo">
+            <ul id="sidemenu">
+                <li><a href="#header">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#portfolio">Projects</a></li>
+                <li><a href="#contact">Contact</a></li>
+                <i class="fa-solid fa-square-xmark"  onclick="closemenu()"></i>
+            </ul>
+            <i class="fa-solid fa-bars"  onclick="openmenu()"></i>
+        </nav>
+        <div class="header-text">
+            <p>Web Developer</p>
+            <h1>Hey, I'm <span>Mohit</span> Mandhana<br>from Chennai,India.</h1>
+        </div>
+    </div>
+</div>
+<!--About section-->
+<div id="about">
+    <div class="container">
+        <div class="row">
+            <div class="about-col-1">
+                <img src="user.jpeg">
+            </div>
+            <div class="about-col-2">
+                <h1 class="sub-title">About Me</h1>
+                <p>Dedicated Electronics and Computer Engineer with expertise in C++, data structures, 
+                    algorithms, and a strong foundation in hardware and software.
+                     Passionate about web development with proficiency in HTML, CSS, and JavaScript. 
+                     Known for exceptional leadership, teamwork, and a drive for innovation. 
+                     Thriving in dynamic environments, I contribute meaningfully to technological 
+                     advancements by crafting efficient algorithms and building user-friendly websites.
+                     My versatility bridges the gap between hardware and software, making me a valuable 
+                     asset in electronics and computer engineering.</p>
+                     <div class="tab-titles">
+                        <p class="tab-links active-link" onclick="opentab('skills')">Skills</p>
+                        <p class="tab-links" onclick="opentab('experience')">Experience</p>
+                        <p class="tab-links "onclick="opentab('education')">Education</p>
+                     </div>
+                     <div class="tab-contents active-tab" id="skills">
+                        <ul>
+                            <li><span>Programming Languages</span><br>C,C++,Python,HTML,CSS,JS</li>
+                            <li><span>Web Development</span><br>Web App Development</li>
+                            <li><span>Data Structures and Algorithms</span><br>Proficient in solving DSA problems</li>
+                        </ul>
+                     </div>
+                     <div class="tab-contents" id="experience">
+                        <ul>
+                            <li><span>Microsoft Learn Student Ambassadors Club SRM</span><br>Corporate Head</li>
+                            <li><span>SRM IET on Campus</span><br>Operations and Logistics Deputy Head</li>
+                        </ul>
+                     </div>
+                     <div class="tab-contents" id="education">
+                        <ul>
+                            <li><span>2021 - Current</span><br>Btech in ECE-CE from SRM University -CGPA-9.39</li>
+                            <li><span>2021</span><br>12th Standard ISC from Methodist School -Percentage-93%</li>
+                            <li><span>2019</span><br>10th Standard ISC from Methodist School -Percentage-82%</li>
+                        </ul>
+                     </div>
+            </div>
+        </div>
+    </div>
+</div>
+<div id="portfolio">
+    <div class="container">
+        <h1 class="sub-title">My Projects</h1>
+        <div class="work-list">
+            <div class="work">
+                <img src="projectvision.png">
+                <div class="layer">
+                    <h3>Computer Vision:Stop/No Stop</h3>
+                    <p>Trained a ML model in IBM Code studio to differentiate between Stop/No stop Sign.
+                    </p>
+                    <a href="https://github.com/MohitMandhana1/Computer-Vision-and-Image-Processing"><i class="fa-solid fa-link"></i>
+                    </a>
+                </div>
+            </div>
+            <div class="work">
+                <img src="python.png">
+                <div class="layer">
+                    <h3>Facial ID Attendance System</h3>
+                    <p> Developed a Program for automated attendance tracking facial recognition
+                        technology using OpenCV library in Python.
+                    </p>
+                    <a href="https://github.com/MohitMandhana1/Facial_Recognition_Attendence_System"><i class="fa-solid fa-link"></i>
+                    </a>
+                </div>
+            </div>
+            <div class="work">
+                <img src="temp.jpg">
+                <div class="layer">
+                    <h3>Temperature Assistant</h3>
+                    <p>Developed a program to fetch the temperature in a particular city using Python
+                    </p>
+                    <a href="https://github.com/MohitMandhana1/Temperature-Assistant"><i class="fa-solid fa-link"></i>
+                    </a>
+                </div>
+            </div>
+        </div>
+        <a href="https://github.com/MohitMandhana1" class="btn">See more</a>
+    </div>
+</div>
+<div id="contact">
+    <div class="container">
+        <div class="row">
+            <div class="contact-left">
+                <h1 class="sub-title">Contact Me</h1>
+                <p><i class="fa-regular fa-envelope"></i>mohitmandhana1@gmail.com</p>
+                <p><i class="fa-solid fa-phone"></i>6289989204</p>
+                <div class="social-icons">
+                    <a href="https://www.instagram.com/_mohitmandhana_/"><i class="fa-brands fa-instagram"></i></a>
+                    <a href="https://www.linkedin.com/in/mmandhana/"><i class="fa-brands fa-linkedin"></i></a>
+                    <a href="https://github.com/MohitMandhana1"><i class="fa-brands fa-github"></i></a>
+                </div>
+                <a href="Mohit_Mandhana_Resume.pdf" download class="btn btn2">Download Resume</a>
+            </div>
+            <div class="contact-right">
+                <form name="submit-to-google-sheet">
+                    <input type="text" name="Name" placeholder="Your Name" required>
+                    <input type="email" name="Email" placeholder="Email ID" required>
+                    <textarea name="Message" rows="6" placeholder="Your Message"></textarea>
+                    <button type="submit" class="btn btn2">Submit</button>
+                </form>
+                <span id="msg"></span>
+            </div>
+        </div>
+    </div>
+    <div class="copyright">
+        <p>Copyright © 2024 Mohit Mandhana.</p>
+    </div>
+</div>
+<script>
+    var tablinks = document.getElementsByClassName("tab-links");
+    var tabcontents = document.getElementsByClassName("tab-contents");
+    function opentab(tabname){
+        for(tablink of tablinks){
+            tablink.classList.remove("active-link");
+        }
+        for(tabcontent of tabcontents){
+            tabcontent.classList.remove("active-tab");
+        }
+        event.currentTarget.classList.add("active-link");
+        document.getElementById(tabname).classList.add("active-tab");
+    }
+</script>
+<script>
+    var sidemeu = document.getElementById("sidemenu");
+
+    function openmenu() {
+        sidemeu.style.right = "0px";
+    }
+
+    function closemenu() {
+        sidemeu.style.right = "-200px";
+    }
+</script>
+<script>
+    const scriptURL = 'https://script.google.com/macros/s/AKfycbw7T8RnvJn9q6H6cKSfIHjm9loUP6bwvnMg1-lkx8loa33fn3F9-wqhh99-h-v7rZVB/exec'
+    const form = document.forms['submit-to-google-sheet']
+    const msg=document.getElementById("msg")
+  
+    form.addEventListener('submit', e => {
+      e.preventDefault()
+      fetch(scriptURL, { method: 'POST', body: new FormData(form)})
+        .then(response => {
+            msg.innerHTML="Thank you! I will contact you soon!"
+            setTimeout(function(){
+                msg.innerHTML=""
+            },5000)
+            form.reset()
+        })
+        .catch(error => console.error('Error!', error.message))
+    })
+  </script>
+</body>
+</html>
